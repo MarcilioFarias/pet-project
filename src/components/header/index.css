@@ -1,0 +1,46 @@
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {   
+    display: flex; 
+    height: 100px;    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem; 
+    padding: 1rem;   
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;    
+    font-size: 22px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+}
+.menu-link:hover::after {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    
+}
