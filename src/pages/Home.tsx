@@ -1,8 +1,9 @@
 import './Home.css'
-// import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
-import PetList from '../components/body/petlist'
 import Nav from '../components/nav/navbar'
+
+import { petData } from '../components/Pet-List/pet-data'
+import { PetCard } from '../components/Pet-List/pet-card'
 
 function Home(){
   return (
@@ -10,8 +11,8 @@ function Home(){
       <header>        
         <Nav />
       </header>
-      <section>
-        <PetList />        
+      <section>        
+        <PetCard pet={petData}/>        
       </section>
       <footer>
         <Footer />

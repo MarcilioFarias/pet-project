@@ -1,0 +1,92 @@
+.petlist {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.pet-card {
+    width: min-content;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(229, 122, 7, 0.234);
+    transition: .4s ease;
+}
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.pet-card .card-image {
+    position: relative;
+    width: 250px;
+    height: 250px;    
+    margin-bottom: 15px;
+    text-align: center;        
+}
+
+.pet-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.pet-card .pet-img {    
+    transition: .4s ease;
+}
+
+.pet-card:hover .card-image img {
+    transform: scale(1.02)
+        rotate(-3deg)
+        translateX(-5px);
+}
+
+.pet-card .card-image .fav-icon  {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;    
+}
+
+.pet-fav-icon {
+    border: none;
+    background: none;      
+}
+
+.pet-card .pet-content h3{
+    margin: 5px;
+    font-size: 22px;    
+    text-align: center;
+}
+.pet-card .pet-content p{
+    font-size: 16px;
+    color: #666;    
+    text-align: center;    
+}
+
+.pet-card .pet-content .button-adopt {
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    background: linear-gradient(45deg, #fabd14, #eb9616);
+}
+.pet-card .pet-content .button-adopt:hover {
+    background-color: #cf6e05;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .pet-list {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
